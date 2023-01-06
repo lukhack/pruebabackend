@@ -1,0 +1,33 @@
+# docker-compose.yml
+version: "3"
+services:
+  app:
+    restart: on-failure
+    build: .
+    depends_on:
+      - postgres
+    environment:
+        SEQ_DB: db_italliance
+        SEQ_USER: italliance
+        SEQ_PW: Ita39474
+        PORT: 9090
+        # DATABASE_URL: postgres://username:pgpassword@127.0.0.1:5432/mydatabase
+        DATABASE_URL: "postgres://italliance:Ita39474@postgres:5432/db_italliance"
+    ports:
+      - "9090:9090"
+    command: npm run start
+    volumes:
+      - .:/app/
+      - /app/node_modules
+
+  postgres:
+    container_name: "psql"
+    image: postgres:11
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: italliance
+      POSTGRES_PASSWORD: Ita39474
+      POSTGRES_DB: db_italliance
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql

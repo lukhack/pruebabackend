@@ -4,11 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24fd8f33-0ea7-4065-bfb7-12abb51c09a5" name="Changes" comment="" />
+    <list default="true" id="24fd8f33-0ea7-4065-bfb7-12abb51c09a5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PUBLIC/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/PriorityController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/StatusController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/StatusTaskController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controller/TaskController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/configSequealize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/enviroment.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/TaskExecute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/jwt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helpers/swagger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/auth.middle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/validUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/middlewares/validar-jwt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Priority.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Status.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/StatusTask.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/Task.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/readme" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/Allregister.Route.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/Priority.Route.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/Status.Route.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/Task.Route.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -51,7 +85,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673014646349</updated>
-      <workItem from="1673014647769" duration="16998000" />
+      <workItem from="1673014647769" duration="25629000" />
     </task>
     <servers />
   </component>

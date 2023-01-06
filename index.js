@@ -23,7 +23,7 @@ app.use(express.static('public'));
 app.use('/app/',routerAll);
 
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 9090
 //Rutas
 app.listen(PORT, ()=>{
     console.log(`servidor corriendo en el puerto ${PORT}`);

@@ -1,12 +1,10 @@
-
-
-#ejecutar
-npm install
-
-#ejecutar
-npm -i nodemon
-
 #ejecutar el docker
 docker build -t alliance .
+
+#dowload repo fromo docker-hub alternatively
+docker pull kdsharma/nodewithdocker
+
+#deploy application
+docker-compose up -d
 
 
