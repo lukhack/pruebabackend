@@ -1,0 +1,12 @@
+
+
+#ejecutar
+npm install
+
+#ejecutar
+npm -i nodemon
+
+#ejecutar el docker
+docker build -t alliance .
+
+
