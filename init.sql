@@ -12,6 +12,8 @@ CREATE TABLE db_task (
   task_id int null
 );
 
+
+
 CREATE TABLE db_priority (
   id serial PRIMARY KEY,
   "createdAt" DATE,
@@ -59,6 +61,15 @@ ALTER TABLE db_task ADD CONSTRAINT db_task_fk_2 FOREIGN KEY (status_id) REFERENC
 
 ALTER TABLE db_status_task ADD CONSTRAINT db_status_task_fk FOREIGN KEY (task_id) REFERENCES public.db_task(id);
 ALTER TABLE db_status_task ADD CONSTRAINT db_status_task_fk_1 FOREIGN KEY (status_id) REFERENCES public.db_status(id);
+
+
+
+
+INSERT INTO db_task (name, description, begin_date, end_date, duration, "createdAt", "updatedAt", priority_id, status_id) VALUES ('Task 1', 'Task 1','2023-01-03 12:30:00', '2023-01-03 12:40:00',30, '2023-01-03','2023-01-03', 1, 1);
+INSERT INTO db_task (name, description, begin_date, end_date, duration, "createdAt", "updatedAt", priority_id, status_id) VALUES ('Task 2', 'Task 2','2023-01-03 12:30:00', '2023-01-03 12:40:00',30, '2023-01-03','2023-01-03', 1, 1);
+INSERT INTO db_task (name, description, begin_date, end_date, duration, "createdAt", "updatedAt", priority_id, status_id) VALUES ('Task 3', 'Task 3','2023-01-03 12:30:00', '2023-01-03 12:40:00',30, '2023-01-03','2023-01-03', 1, 1);
+INSERT INTO db_task (name, description, begin_date, end_date, duration, "createdAt", "updatedAt", priority_id, status_id) VALUES ('Task 4', 'Task 4','2023-01-03 12:30:00', '2023-01-03 12:40:00',30, '2023-01-03','2023-01-03', 1, 1);
+INSERT INTO db_task (name, description, begin_date, end_date, duration, "createdAt", "updatedAt", priority_id, status_id) VALUES ('Task 5', 'Task 5','2023-01-03 12:30:00', '2023-01-03 12:40:00',30, '2023-01-03','2023-01-03', 1, 1);
 
 
 
