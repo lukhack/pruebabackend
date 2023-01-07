@@ -14,7 +14,7 @@ const options = {
 const swaggerSpec = swaggerJSDoc(options);
 
 const swaggerDocs = (app, port) => {
-    app.use("/app/task", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
+    app.use("/app/v1/task", swaggerUI.serve, swaggerUI.setup(swaggerSpec));
 };
 
 module.exports =  {
