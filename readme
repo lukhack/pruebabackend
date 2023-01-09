@@ -7,7 +7,7 @@ docker pull kdsharma/nodewithdocker
 #deploy application
 docker-compose up -d
 
-#path para visualizar la documentación apis
+#path para visualizar la documentación con swargger
 /api-doc
 
 
