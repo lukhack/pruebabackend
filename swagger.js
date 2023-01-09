@@ -9,7 +9,10 @@ const options = {
         info: {title: "Federación Nacionial de cafeteros de colombia Task API", version:'10.0.0'}
     },
 
-    apis:[`${path.join(__dirname, "/routes/*.js")}`, `${path.join(__dirname, "/docs/*.yaml")}`]
+    apis:[`${path.join(__dirname, "/routes/*.js")}`,
+        `${path.join(__dirname, "/docs/*.yaml")}`,
+        `${path.join(__dirname, "/docs/components/*.yaml")}`
+    ]
 
 }
 
