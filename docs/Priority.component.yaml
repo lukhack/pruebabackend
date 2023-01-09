@@ -1,0 +1,34 @@
+components:
+  schemas:
+    Priority:
+      type: object
+      properties:
+        name:
+          type: string
+          description: the Priority name
+        description:
+          type: integer
+          description: the Priority age
+      required:
+        - name
+        - description
+      example:
+        name: Urgente
+        description: Urgente
+    PriorityWithId:
+      type: object
+      properties:
+        allOf:
+          - $ref: '#/components/schemas/Priority'
+          - type: object
+        id:
+          type: integer
+          description: the Priority id
+      required:
+        - id
+        - name
+      example:
+        id: 1
+        name: Urgente
+        description: Urgente
+

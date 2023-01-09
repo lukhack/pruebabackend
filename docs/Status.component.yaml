@@ -1,0 +1,34 @@
+components:
+  schemas:
+    Status:
+      type: object
+      properties:
+        name:
+          type: string
+          description: the Status name
+        description:
+          type: integer
+          description: the Status age
+      required:
+        - name
+        - description
+      example:
+        name: Iniciada
+        description: Iniciada
+    StatusWithId:
+      type: object
+      properties:
+        allOf:
+          - $ref: '#/components/schemas/Status'
+          - type: object
+        id:
+          type: integer
+          description: the Status id
+      required:
+        - id
+        - name
+      example:
+        id: 1
+        name: Iniciada
+        description: Iniciada
+

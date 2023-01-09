@@ -57,7 +57,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Proyectos/italliance/controller",
+    "last_opened_file_path": "D:/Proyectos/italliance/docs",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -70,10 +70,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Proyectos\italliance\controller" />
+      <recent name="D:\Proyectos\italliance\docs" />
+      <recent name="D:\Proyectos\italliance" />
+      <recent name="D:\Proyectos\italliance\routes" />
       <recent name="D:\Proyectos\italliance\models" />
+      <recent name="D:\Proyectos\italliance\controller" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Proyectos\italliance\routes" />
+      <recent name="D:\Proyectos\italliance" />
       <recent name="D:\Proyectos\italliance\helpers" />
     </key>
   </component>
@@ -85,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1673014646349</updated>
-      <workItem from="1673014647769" duration="28350000" />
+      <workItem from="1673014647769" duration="56146000" />
     </task>
     <servers />
   </component>

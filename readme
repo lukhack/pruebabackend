@@ -7,8 +7,7 @@ docker pull kdsharma/nodewithdocker
 #deploy application
 docker-compose up -d
 
-
-#path para visualizar el croosfit
-/app/v1/task
+#path para visualizar la documentación apis
+/api-doc
 
 

@@ -1,0 +1,70 @@
+components:
+  schemas:
+    Task:
+      type: object
+      properties:
+        name:
+          type: string
+          description: the user name
+        description:
+          type: string
+          description: the user email
+        beginDate:
+          type: string
+          description: the user email
+        endDate:
+          type: string
+          description: the user email
+        duration:
+          type: number
+          description: the user email
+        task_id:
+          type: integer
+          description: the task id if is a subTask
+        priority_id:
+          type: integer
+          description: the priority id ['1=> Urgente,2=> , Normal, 3=> Bajo']
+        status_id:
+          type: integer
+          description: the priority id ['1=>Iniciada, 2=> En Proceso, 3=> Terminada']
+        required:
+        - name
+        - beginDate
+        - task_id
+        - priority_id
+        - status_id
+      example:
+        name: "Task 1"
+        beginDate: "2022-01-06"
+        endDate: "2022-01-06"
+        duration: 1
+        task_id: 1
+        priority_id: 1
+        status_id: 1
+    TaskWithId:
+      type: object
+      properties:
+        allOf:
+          - $ref: '#/components/schemas/Task'
+          - type: object
+        id:
+          type: integer
+          description: the Task name
+        required:
+          - id
+          - name
+          - beginDate
+          - task_id
+          - priority_id
+          - status_id
+
+      example:
+        id: 1
+        name: "Task 1"
+        beginDate: "2022-01-06"
+        endDate: "2022-01-06"
+        duration: 1
+        task_id: 1
+        priority_id: 1
+        status_id: 1
+

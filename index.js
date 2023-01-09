@@ -3,7 +3,7 @@ require('dotenv').config();
 //instancia la configuración de sequalize framework ORM
 const { dbConnection } = require("./database/configSequealize");
 const  routerAll  = require("./routes/Allregister.Route");
-const { swaggerDocs: v2data } = require("./helpers/swagger");
+const { swaggerDocs: v2data } = require("./swagger");
 
 
 const cors = require('cors');
@@ -20,7 +20,7 @@ app.use(express.json());
 dbConnection();
 //Directorio publico
 app.use(express.static('public'));
-app.use('/app/',routerAll);
+app.use('/app/',routerAll, );
 
 
 const PORT = process.env.PORT || 9090

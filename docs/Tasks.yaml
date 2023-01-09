@@ -1,0 +1,109 @@
+paths:
+    /Task/{id}:
+        get:
+            summary: Get a object of Task
+            tags: [ Task ]
+            responses:
+                200:
+                    description: A list of Task
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/TaskWithId'
+
+    /Task:
+        get:
+            summary: Get a list of Task
+            tags: [ Task ]
+            responses:
+                200:
+                    description: A list of Task
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/TaskWithId'
+        post:
+            summary: create a new task
+            tags: [ Task ]
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/Task'
+            responses:
+                200:
+                    description: A list of Task
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/TaskWithId'
+        put:
+            summary: Update a Task
+            description: Update a pet in the store with form data.
+            operationId: updateTask
+            tags: [ Task ]
+            consumes:
+                - application/json
+            produces:
+                - application/xml
+                - application/json
+            parameters:
+                - name: taskId
+                  in: path/{id}
+                  description: ID of task that needs to be updated
+                  required: true
+                  type: integer
+                  format: int64
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/TaskWithId'
+            responses:
+                200:
+                    description: A list of Task
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/TaskWithId'
+                '405':
+                    description: Invalid input
+        delete:
+            summary: Delete a Task
+            description: Delete a Task with id.
+            operationId: deleteTask
+            tags: [ Task ]
+            consumes:
+                - application/json
+            produces:
+                - application/xml
+                - application/json
+            parameters:
+                - name: taskId
+                  in: path/{id}
+                  description: ID of task that needs to be updated
+                  required: true
+                  type: integer
+                  format: int64
+    /Task/taskExecute:
+        get:
+            summary: Get a object of Task to execute
+            tags: [ Task ]
+            responses:
+                200:
+                    description: A list of Task
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/TaskWithId'
+                '405':
+                    description: Invalid input
+
+
+
+
+
+
+

@@ -1,0 +1,96 @@
+paths:
+    /Status/{id}:
+        get:
+            summary: Get a object of Status
+            tags: [ Status ]
+            responses:
+                200:
+                    description: A list of Status
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/StatusWithId'
+
+    /Status:
+        get:
+            summary: Get a list of Status
+            tags: [ Status ]
+            responses:
+                200:
+                    description: A list of Status
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/StatusWithId'
+        post:
+            summary: create a new Status
+            tags: [ Status ]
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/Status'
+            responses:
+                200:
+                    description: A list of Status
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/StatusWithId'
+        put:
+            summary: Update a Status
+            description: Update a pet in the store with form data.
+            operationId: updateStatus
+            tags: [ Status ]
+            consumes:
+                - application/json
+            produces:
+                - application/xml
+                - application/json
+            parameters:
+                - name: StatusId
+                  in: path/{id}
+                  description: ID of Status that needs to be updated
+                  required: true
+                  type: integer
+                  format: int64
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/StatusWithId'
+            responses:
+                200:
+                    description: A list of Status
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/StatusWithId'
+                '405':
+                    description: Invalid input
+        delete:
+            summary: Delete a Status
+            description: Delete a Status with id.
+            operationId: deleteStatus
+            tags: [ Status ]
+            consumes:
+                - application/json
+            produces:
+                - application/xml
+                - application/json
+            parameters:
+                - name: StatusId
+                  in: path/{id}
+                  description: ID of Status that needs to be updated
+                  required: true
+                  type: integer
+                  format: int64
+
+
+
+
+
+
+
